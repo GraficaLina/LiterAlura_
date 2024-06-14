@@ -80,8 +80,9 @@ public class Principal {
     }
 
 
-    //Traigo la info de la api
+    
     private DatosLibro getDataBook() {
+    //Conección con la API ---> llamado de la info    
         System.out.println("Ingresar el nombre del libro a buscar: ");
         String bookTitle = scanner.nextLine();
         var json = apiConsumption.getData(URL_BASE + "?search=" + bookTitle.replace(" ", "+"));
